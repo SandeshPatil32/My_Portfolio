@@ -8,7 +8,6 @@ export default function About() {
     <AnimatedSection>
       <section id="about" className="bg-purple-50 py-20 px-6">
         <div className="max-w-6xl mx-auto">
-      
           <h2 className="text-4xl font-bold text-center text-purple-700 mb-6">
             About Me
           </h2>
@@ -21,7 +20,6 @@ export default function About() {
 
           {/* Main Content */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-     
             <div className="flex justify-center">
               <Image
                 src="/images/image2.jpg" // Ensure this image exists in /public/images/
@@ -31,7 +29,6 @@ export default function About() {
                 className="rounded-2xl shadow-lg"
               />
             </div>
-
 
             <div className="space-y-6 text-gray-700 text-lg">
               <p>
@@ -44,7 +41,8 @@ export default function About() {
               <p>
                 I have hands-on experience with{" "}
                 <span className="font-semibold text-gray-800">
-                  React.js, Next.js, Node.js, Express, MongoDB, Python, Typescript
+                  React.js, Next.js, Node.js, Express, MongoDB, Python,
+                  Typescript
                 </span>{" "}
                 and more. I m always learning new frameworks and tools to expand
                 my skill set.
@@ -55,9 +53,11 @@ export default function About() {
                 high-quality, production-ready projects.
               </p>
               <a
-                href="/public/Resume.pdf" download="resume.pdf" 
+                href="https://drive.google.com/file/d/1uhbc0c6PwD0CYrI0SimXN0zKg8mdlurR/view?usp=sharing"
                 className="bg-violet-600 text-white px-5 py-2 rounded-lg hover:bg-violet-800 transition"
-              >Download resume</a>
+              >
+                Download resume
+              </a>
 
               <div className="bg-purple-100 p-5 rounded-xl shadow-md">
                 <ul className="list-disc list-inside text-purple-800 font-semibold">
