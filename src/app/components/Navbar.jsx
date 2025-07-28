@@ -1,12 +1,15 @@
 "use client";
 import { useEffect, useState } from "react";
 import { FaEquals } from "react-icons/fa";
+import { RxCross2 } from "react-icons/rx";
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("");
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+   const toggleMenu = () => {
+     setIsOpen((prev) => !prev);
+   };
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -45,55 +48,68 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold text-purple-600">Sandesh Patil</div>
+    <>
+      <nav className="bg-white shadow-md sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+          <div className="text-2xl font-bold text-purple-600">
+            Sandesh Patil
+          </div>
 
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 text-gray-800 font-semibold text-base">
-          {navItems.map((item) => (
-            <li key={item.id}>
-              <button
-                onClick={() => scrollTo(item.id)}
-                className={`${
-                  activeSection === item.id
-                    ? "text-purple-600 underline"
-                    : "text-gray-800"
-                } hover:text-purple-700 transition duration-200 hover:cursor-pointer`}
-              >
-                {item.label}
-              </button>
-            </li>
-          ))}
-        </ul>
+          {/* Desktop Menu */}
+          <ul className="hidden md:flex space-x-8 text-gray-800 font-semibold text-base">
+            {navItems.map((item) => (
+              <li key={item.id}>
+                <button
+                  onClick={() => scrollTo(item.id)}
+                  className={`${
+                    activeSection === item.id
+                      ? "text-purple-600 underline"
+                      : "text-gray-800"
+                  } hover:text-purple-700 transition duration-200 hover:cursor-pointer`}
+                >
+                  {item.label}
+                </button>
+              </li>
+            ))}
+          </ul>
 
-        {/* Mobile Hamburger Icon */}
-        <div className="md:hidden">
-          <button onClick={toggleMenu}>
-            <FaEquals className="text-2xl text-purple-600 hover:cursor-pointer" />
-          </button>
-        </div>
-      </div>
+          {/* Mobile Hamburger Icon */}
 
-      {/* Mobile Dropdown Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-white shadow-lg px-6 py-4 space-y-4">
-          {navItems.map((item) => (
-            <div key={item.id}>
-              <button
-                onClick={() => scrollTo(item.id)}
-                className={`${
-                  activeSection === item.id
-                    ? "text-purple-600 underline"
-                    : "text-gray-800"
-                } block w-full text-left text-base font-semibold hover:text-purple-700 transition duration-200 cursor-pointer`}
-              >
-                {item.label}
+          {isOpen ? (
+            <div className="md:hidden">
+              <button onClick={toggleMenu}>
+                <RxCross2 className="text-2xl text-purple-600 hover:cursor-pointer" />
               </button>
             </div>
-          ))}
+          ) : (
+            <div className="md:hidden">
+              <button onClick={toggleMenu}>
+                <FaEquals className="text-2xl text-purple-600 hover:cursor-pointer" />
+              </button>
+            </div>
+          )}
         </div>
-      )}
-    </nav>
+
+        {/* Mobile Dropdown Menu */}
+        {isOpen && (
+          <div className="md:hidden bg-white shadow-lg px-6 py-4 space-y-4">
+            {navItems.map((item) => (
+              <div key={item.id}>
+                <button
+                  onClick={() => scrollTo(item.id)}
+                  className={`${
+                    activeSection === item.id
+                      ? "text-purple-600 underline"
+                      : "text-gray-800"
+                  } block w-full text-left text-base font-semibold hover:text-purple-700 transition duration-200 cursor-pointer`}
+                >
+                  {item.label}
+                </button>
+              </div>
+            ))}
+          </div>
+        )}
+      </nav>
+    </>
   );
 }
