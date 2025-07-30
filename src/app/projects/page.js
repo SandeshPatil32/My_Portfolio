@@ -16,7 +16,7 @@ export default function page() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {/* Project Card 1 */}
-            <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+            <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition hover:scale-110">
               <h3 className="text-xl font-semibold text-purple-700 mb-2">
                 Website Vulnerability Analyzer
               </h3>
@@ -31,7 +31,8 @@ export default function page() {
               <div className="flex gap-4">
                 <a
                   href="https://website-vulnerability-scanner-1.onrender.com/"
-                  className="text-purple-600 hover:underline text-sm" target="blank"
+                  className="text-purple-600 hover:underline text-sm"
+                  target="blank"
                 >
                   🔗 Live Demo
                 </a>
@@ -39,7 +40,7 @@ export default function page() {
             </div>
 
             {/* Project Card 2 */}
-            <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+            <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition hover:scale-110">
               <h3 className="text-xl font-semibold text-purple-700 mb-2">
                 Number Counter App
               </h3>

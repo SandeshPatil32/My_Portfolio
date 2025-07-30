@@ -4,12 +4,14 @@ import AnimatedSection from "../components/AnimatedSection";
 
 export default function Skills() {
   const frontend = [
-    { name: "HTML", src: "/images/html.png" },
-    { name: "CSS", src: "/images/css.png" },
+
+    { name: "HTML & CSS", src: "/images/html_css.png" },
     { name: "JavaScript", src: "/images/js.png" },
     { name: "TailwindCSS", src: "/images/tailwind.png" },
     { name: "Bootstrap", src: "/images/bootstrap.png" },
-    { name: "React", src: "/images/react.png" },
+    { name: "React JS", src: "/images/react.png" },
+    { name: "Next JS", src: "/images/next.png"}
+
   ];
 
   const backend = [
@@ -17,11 +19,22 @@ export default function Skills() {
     { name: "Flask", src: "/images/flask.png" },
     { name: "PHP", src: "/images/php.png" },
     { name: "Node.js", src: "/images/node.png" },
+    { name: "Express", src: "/images/express.png"},
+    { name: "Typescript", src: "/images/typescript.png"},
   ];
 
+  const database = [
+    { name: "MongoDB", src: "/images/mongo.png"},
+    { name: "SQL", src: "/images/sql.png"},
+  ]
+  
   const others = [
     { name: "GitHub", src: "/images/github.png" },
+    { name: "Cloud", src: "/images/cloud.png"},
+    { name: "Docker", src: "/images/docker.png"},
     { name: "Linux", src: "/images/linux.png" },
+    { name: "Ubuntu", src: "/images/ubuntu.png"},
+    
   ];
 
   const renderSkills = (skills) =>
@@ -55,6 +68,14 @@ export default function Skills() {
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-6 mb-12">
             {renderSkills(backend)}
+          </div>
+
+          {/*Databases*/}
+          <h3 className="text-xl font-semibold text-purple-600 mb-4">
+            Databases
+          </h3>
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-6 mb-12">
+            {renderSkills(database)}
           </div>
 
           {/* Others */}

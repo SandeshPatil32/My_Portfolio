@@ -34,14 +34,13 @@ export default function Services() {
       <section id="services" className="bg-purple-50 py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-violet-700 mb-4">
-            Development Services
+            My Services
           </h2>
           <p className="text-gray-600 font-medium mb-14 max-w-2xl mx-auto">
             Turning ideas into interactive digital experiences — I design and
             develop full-stack web apps with style and functionality.
           </p>
 
-  
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, i) => (
               <div

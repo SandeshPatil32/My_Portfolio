@@ -18,7 +18,5 @@ Contact form with backend integration and form validation
 Smooth scrolling and animated transitions
 Easily customizable with modular components
 
-for run 👉👉 npm run dev
 
-
------------------------------------------------------------- Sandesh Patil ------------------------------------------------------------
+--------------------------------------------------------- By Sandesh Patil ------------------------------------------------------------
