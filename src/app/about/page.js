@@ -59,7 +59,13 @@ export default function About() {
               >
                 Download resume
               </a>
-
+              <a
+                href="https://drive.google.com/file/d/1-B4G2MhyTMEolpzhMaKIA6i6b9ML4Hf2/view?usp=sharing"
+                className="bg-violet-600 text-white px-5 py-2 rounded-lg hover:bg-violet-800 transition"
+                target="blank"
+              >
+                Download resume
+              </a>
               <div className="bg-purple-100 p-5 rounded-xl shadow-md">
                 <ul className="list-disc list-inside text-purple-800 font-semibold">
                   <li>Full Stack Web Development</li>
