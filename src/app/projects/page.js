@@ -49,19 +49,21 @@ export default function page() {
             {/* Project Card 2 */}
             <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition hover:scale-110">
               <h3 className="text-xl font-semibold text-purple-700 mb-2">
-                Number Counter App
+                Portfolio Website
               </h3>
               <p className="text-gray-600 text-sm mb-4">
-                A simple app that lets users increment, decrement, and reset a
-                counter with a sleek UI. Great for beginners learning React
-                state.
+                AA portfolio website refers to the personal web space that
+                showcases ones work, skills, and achievements to prospective
+                hiring managers or clients. It is a virtual resume and display
+                of ones work, thus helping one stand out in the competitive job
+                market.
               </p>
               <div className="text-sm text-gray-500 mb-4">
-                Tech: React.js, Next.js, Tailwind CSS, MongoDB etc.
+                Tech: React.js, Next.js, Tailwind CSS, MongoDB etc
               </div>
               <div className="flex gap-4">
                 <a
-                  href="https://react-counter-app-ten-teal.vercel.app/"
+                  href="https://myportfolio-nu-peach.vercel.app/"
                   target="blank"
                   className="text-purple-600 hover:underline text-sm"
                 >
