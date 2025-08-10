@@ -26,7 +26,7 @@ export default function page() {
                 testing and education.
               </p>
               <div className="text-sm text-gray-500 mb-4">
-                Tech: Node.js, Express, Axios, HTML, Tailwind CSS
+                Tech: HTMl5, Bootstrap, Javascript, Python, Flask etc.
               </div>
               <div className="flex gap-4">
                 <a
@@ -35,6 +35,13 @@ export default function page() {
                   target="blank"
                 >
                   🔗 Live Demo
+                </a>
+                <a
+                  href="https://github.com/SandeshPatil32/website-vulnerability-scanner"
+                  className="text-purple-600 hover:underline text-sm"
+                  target="blank"
+                >
+                  GitHub
                 </a>
               </div>
             </div>
@@ -50,7 +57,7 @@ export default function page() {
                 state.
               </p>
               <div className="text-sm text-gray-500 mb-4">
-                Tech: React.js, Tailwind CSS, JavaScript
+                Tech: React.js, Next.js, Tailwind CSS, MongoDB etc.
               </div>
               <div className="flex gap-4">
                 <a
@@ -59,6 +66,13 @@ export default function page() {
                   className="text-purple-600 hover:underline text-sm"
                 >
                   🔗 Live Demo
+                </a>
+                <a
+                  href="https://github.com/SandeshPatil32/My_Portfolio"
+                  className="text-purple-600 hover:underline text-sm"
+                  target="blank"
+                >
+                  GitHub
                 </a>
               </div>
             </div>

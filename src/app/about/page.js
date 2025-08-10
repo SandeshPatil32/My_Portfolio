@@ -53,7 +53,7 @@ export default function About() {
                 high-quality, production-ready projects.
               </p>
               <a
-                href="https://drive.google.com/file/d/1uhbc0c6PwD0CYrI0SimXN0zKg8mdlurR/view?usp=sharing"
+                href="https://drive.google.com/file/d/1-B4G2MhyTMEolpzhMaKIA6i6b9ML4Hf2/view?usp=sharing"
                 className="bg-violet-600 text-white px-5 py-2 rounded-lg hover:bg-violet-800 transition"
                 target="blank"
               >
