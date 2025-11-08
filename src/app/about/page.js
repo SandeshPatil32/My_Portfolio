@@ -22,7 +22,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
               <Image
-                src="/images/image2.jpg" // Ensure this image exists in /public/images/
+                src="/images/image2.jpg"
                 alt="Sandesh Patil"
                 width={350}
                 height={350}
